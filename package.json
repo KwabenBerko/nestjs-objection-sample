@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "knex": "ts-node -r dotenv/config node_modules/knex/bin/cli.js --cwd ./src"
+    "knex": "ts-node -r dotenv/config node_modules/knex/bin/cli.js --cwd ./src --knexfile ./database/knexfile.ts"
   },
   "dependencies": {
     "@nestjs/common": "^6.10.14",
